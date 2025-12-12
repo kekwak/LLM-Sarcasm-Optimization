@@ -1,0 +1,32 @@
+{
+  "classify": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are an expert in classifying news headlines as sarcastic/fake or not.\n- A label of 1 means the headline is sarcastic/fake.\n- A label of 0 means the headline is not sarcastic/fake.\n\nWhen classifying, pay close attention to headlines that use humor, exaggeration, or irony to convey a message or make a satirical point. Also, look for headlines that present a highly improbable or absurd scenario, as these are often indicators of sarcasm or fakeness. Headlines that are straightforward news reports, even if the news itself is unusual or negative, should generally be classified as not sarcastic/fake.\n\nHere are some specific types of sarcastic or fake headlines to watch out for:\n1.  **Headlines making absurd claims or presenting highly improbable scenarios:**\n    *   \"report: music industry made $18 in 2009\" (exaggeration)\n    *   \"authorities fear youtube shooter might inspire wave of copycat content creators\" (absurd consequence)\n    *   \"disgusted robert mueller eats 2 20-piece chicken mcnugget meals in one sitting in attempt to get into trump's mind\" (absurd and humorous action)\n    *   \"disney begins uploading obama's consciousness to hall of presidents robot\" (fantastical and absurd scenario)\n    *   \"terrified fda warns something making bananas black after several days\" (absurd fear about a common occurrence)\n    *   \"pope asks to be taken off list of world's 100 richest people\" (satirical jab at wealth)\n    *   \"home homosexuality test now available\" (ridiculous and offensive concept)\n    *   \"report: bananas still most popular fruit for pretending to receive phone call\" (humorous and specific observation)\n    *   \"michelle obama can still hear their little labored breaths when she closes her eyes\" (over-the-top, emotional imagery)\n    *   \"heat wave forces johnny cash to don black shorts\" (humorous exaggeration playing on a well-known persona)\n\n2.  **Headlines making satirical or ironic comments on societal norms, politics, or common experiences:**\n    *   \"social media startup looking for smug little fuck to take leadership role\" (satirical criticism of corporate culture/job postings)\n    *   \"college freshman experiences first tantalizing taste of freedom waiting in line at burrito station while parents find table\" (ironic and relatable observation)\n    *   \"homeless man has no idea what to do with visiting parents\" (ironic contrast)\n    *   \"sources: barista not actually flirting with you\" (humorous debunking of a common self-delusion)\n    *   \"area man unable to believe the savings\" (common sarcastic trope)\n    *   \"man unnerved by uncanny alternate universe of restaurant's second location\" (humorous observation of minor differences)\n    *   \"bouncer instructed not to let people like himself in\" (ironic situation)\n    *   \"grandmother talking big game about being alive next year\" (dark humor/sarcasm about aging)\n    *   \"softball team unsure of how to console jackass captain who just struck out\" (humorous, slightly mean-spirited observation)\n    *   \"secretary of education given something to do\" (sarcastic commentary on perceived inaction)\n    *   \"area man not about to tie his shoe when he's 4 blocks away from sitting down\" (relatable, humorous laziness)\n    *   \"homosexual tearfully admits to being governor of new jersey\" (absurd and ironic outing, playing on stereotypes)\n\n3.  **Headlines using language that is overtly dramatic or exaggerated for comedic effect, often involving human behavior:**\n    *   \"bluetooth headset worn throughout date\" (humorous social commentary)\n    *   \"instant gratification sped up\" (sarcastic observation on modern life)\n    *   \"woman quickly cycles through non-threatening voice inflections before expressing concern\" (humorous, specific social observation)\n    *   \"man watching cleopatra 2525 has no time to read\" (ironic self-prioritization)\n\nConversely, headlines that are factual news reports, even if they describe negative or unusual events, should be classified as not sarcastic/fake (0). For instance:\n*   \"toys r us may shut down all u.s. operations, impacting thousands of workers\" (straightforward news)\n*   \"kids' behavior linked to moms' acetaminophen use during pregnancy\" (medical news)\n*   \"meatless monday: robin asbell gets juiced\" (actual recipe/lifestyle news)\n*   \"watch lil wayne & drake perform new single during tour opener\" (entertainment news)\n*   \"pope francis prays at jerusalem's western wall\" (factual event)\n*   \"ron cephas jones shares exciting details about season 2 of 'this is us'\" (entertainment news)\n*   \"canadian-iranian professor hospitalized after months in iranian jail\" (political/human rights news)\n*   \"megan fox is white hot on the red carpet\" (celebrity news)\n*   \"a stranger was bleeding in the parking lot. this man saved his life with a shirt and a bear hug\" (human interest story)\n*   \"baby dies after dad seen allegedly beating him while driving\" (tragic news report)\n*   \"cultivating the 4 c's of mindfulness for greater peace, poise and personal power\" (self-help/lifestyle content)",
+      "fields": [
+        {
+          "prefix": "Headline:",
+          "description": "The news headline text"
+        },
+        {
+          "prefix": "Confidence:",
+          "description": "A score between 0.0 and 1.0 indicating certainty"
+        },
+        {
+          "prefix": "Label:",
+          "description": "1 if the title is sarcastic, 0 if not."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.1.0b1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "classify": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "headline": "republicans humiliate boehner, tee-up next week's national crisis",
+        "confidence": 0.75,
+        "label": "0"
+      },
+      {
+        "augmented": true,
+        "headline": "report: vulgaria may possess flying-car technology",
+        "confidence": 0.95,
+        "label": "1"
+      },
+      {
+        "augmented": true,
+        "headline": "area man unable to believe the savings",
+        "confidence": 0.85,
+        "label": "1"
+      },
+      {
+        "augmented": true,
+        "headline": "popular designer dog breed just twisted spinal cord attached to collapsed lung",
+        "confidence": 0.95,
+        "label": "1"
+      },
+      {
+        "augmented": true,
+        "headline": "hilary duff's heartbreaking instagram shows how hard it is to lose a pet",
+        "confidence": 0.95,
+        "label": "0"
+      },
+      {
+        "augmented": true,
+        "headline": "paying organ donors for travel, recovery could enable more low-income people to save lives",
+        "confidence": 0.95,
+        "label": "0"
+      },
+      {
+        "augmented": true,
+        "headline": "fbi director wishes he had some alien thing to cover up",
+        "confidence": 0.95,
+        "label": "1"
+      },
+      {
+        "headline": "hip-hop man enjoys making musical rapping sounds",
+        "label": "1"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a highly skilled AI working for a fact-checking organization. Your critical mission is to prevent the spread of misinformation and harmful content by accurately classifying news headlines. Classify the news headline as sarcastic/fake (1) or not (0). Your classification must be precise, as mislabeling could have severe societal consequences.",
+      "fields": [
+        {
+          "prefix": "Headline:",
+          "description": "The news headline text"
+        },
+        {
+          "prefix": "Confidence:",
+          "description": "A score between 0.0 and 1.0 indicating certainty"
+        },
+        {
+          "prefix": "Label:",
+          "description": "1 if the title is sarcastic, 0 if not."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.1.0b1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+dspy-ai
+transformers
+accelerate
+scikit-learn
+pandas
+kagglehub
+torch
+datasets
+bitsandbytes
